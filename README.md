@@ -1,3 +1,62 @@
+              Library Management System
+Library Management System Project Presentation & OOP Implementation Analysis
+
+NAME: OWAIS
+STUDENT ID: BTAI2023029
+COURSE: B TECH AI (5TH SEM)
+PROJECT: Library Management System
+JAVA MENTOR: MR. NISHANT THAKUR
+Project Overview
+A Java-based application that simulates managing a library of books and magazines using Object-Oriented Programming principles.
+Table of Contents
+1. Project Introduction
+2. Class Diagram & Structure
+3. OOP Principles Implementation
+4. Code Explanation
+5. Key Features
+6. Output Screenshots
+7. Conclusion
+Project Introduction
+Objective
+- Create a library management system to borrow and return items.
+- Demonstrate OOP concepts in a real-world scenario.
+- Implement interface and abstract class usage.
+Technologies Used
+- Java Programming Language
+- OOP Principles
+Class Diagram & Structure
+
+┌─────────────────┐
+│   Interface     │
+│  Borrowable     │
+├─────────────────┤
+│ + borrowItem()  │
+│ + returnItem()  │
+└─────────────────┘
+        △
+        │ implements
+┌─────────────────┐
+│  Abstract Class │
+│  LibraryItem    │
+├─────────────────┤
+│ - title         │
+│ - author        │
+│ - id            │
+├─────────────────┤
+│ + showDetails() │
+│ + getters       │
+└─────────────────┘
+        △
+        │ extends
+ ┌──────────────┬──────────────┐
+ │              │              │
+▼               ▼              ▼
+Book        Magazine       (future items)
+
+
+
+
+
 OOP Principles Implementation
 Abstraction
 Hides details of borrow/return and shows only essential operations.
